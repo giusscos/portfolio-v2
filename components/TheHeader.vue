@@ -16,14 +16,15 @@ function closeMenuToggle() {
 
 <template>
   <header class="fixed z-40 top-0 w-full p-5 flex items-center gap-8 flex-nowrap">
-    <NuxtLink @click="closeMenuToggle" to="/" class="font-tanker text-2xl text-text uppercase">
+    <NuxtLink @click="closeMenuToggle" to="/" class="font-bebas text-4xl text-text uppercase">
       Giusscos
     </NuxtLink>
 
     <NavDesktop />
 
     <button type="button" @click="openMenuToggle"
-      :class="{ 'translate-x-[400px]': menuToggle, 'translate-x-0': !menuToggle }" class="lg:hidden z-30 ml-auto btn-primary uppercase font-tanker">
+      :class="{ 'translate-x-[400px]': menuToggle, 'translate-x-0': !menuToggle }"
+      class="lg:hidden z-30 ml-auto btn-primary uppercase font-tanker">
       Menu
     </button>
     <NavMobile />

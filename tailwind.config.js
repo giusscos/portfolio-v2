@@ -11,12 +11,13 @@ export default {
   theme: {
     fontFamily: {
       sans: ["BespokeSerif-Variable"],
+      bebas: ["BebasNeue-Regular"],
       tanker: ["Tanker-Regular"],
     },
     extend: {
       colors: {
-        bg: "#f7f7f7",
-        text: "#010101",
+        bg: "#f0f0f0",
+        text: "#222",
         accent: "#ffd400",
         error: "#e60000",
       },

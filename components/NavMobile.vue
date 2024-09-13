@@ -20,17 +20,22 @@ const socials = ref([
   {
     text: 'Git',
     path: 'https://github.com/giusscos',
-    title: 'Visit about GitHub account'
+    title: 'Visit my GitHub account'
   },
   {
     text: 'Lin',
     path: 'https://linkedin.com/in/giuseppe-cosenza',
-    title: 'Visit about LinkedIn account'
+    title: 'Visit my LinkedIn account'
+  },
+  {
+    text: 'Tel',
+    path: 'https://t.me/giusscos',
+    title: 'Send me a message on Telegram'
   },
   {
     text: 'X',
     path: 'https://x.com/giusscos',
-    title: 'Visit about x account'
+    title: 'Visit my X account'
   },
 ])
 

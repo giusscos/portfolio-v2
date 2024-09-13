@@ -1,9 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    Index
-  </div>
+  <HomeJumbo />
+  <HomeAboutMe />
 </template>
 
 <style scoped></style>
