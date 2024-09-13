@@ -1,3 +1,6 @@
+@import url('tanker.css');
+@import url('bespoke-serif.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

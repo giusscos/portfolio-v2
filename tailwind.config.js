@@ -9,8 +9,20 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["BespokeSerif-Variable"],
+      beMedium: ["BespokeSerif-Medium"],
+      beBold: ["BespokeSerif-Bold"],
+      tanker: ["Tanker-Regular"],
+    },
+    extend: {
+      colors: {
+        bg: "#f7f7f7",
+        text: "#010101",
+        accent: "#ffd400",
+        error: "#e60000",
+      },
+    },
   },
   plugins: [],
-}
-
+};
