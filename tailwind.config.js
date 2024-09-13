@@ -11,8 +11,6 @@ export default {
   theme: {
     fontFamily: {
       sans: ["BespokeSerif-Variable"],
-      beMedium: ["BespokeSerif-Medium"],
-      beBold: ["BespokeSerif-Bold"],
       tanker: ["Tanker-Regular"],
     },
     extend: {
