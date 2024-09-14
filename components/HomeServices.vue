@@ -28,7 +28,7 @@ const services = ref([
 <template>
   <section id="services">
     <h2 class="title-medium uppercase mb-10">
-      Recent works
+      The path
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
       <div v-for="(element, index) in services" :key="'service-' + index"
