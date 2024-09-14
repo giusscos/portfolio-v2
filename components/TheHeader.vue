@@ -14,13 +14,17 @@ function closeMenuToggle() {
 
   menuToggle.value = false;
 }
+
+onMounted(() => {
+  myTo('.show-from-hidden');
+})
 </script>
 
 <template>
   <header class="fixed z-40 top-0 w-full p-5 flex items-center gap-8 flex-nowrap">
     <button type="button" @click="closeMenuToggle"
-      class="font-bebas bg-bg/50 backdrop-blur-lg backdrop-saturate-200 rounded-full px-4 pt-2 pb-1 text-4xl text-text uppercase">
-      Giusscos
+      class="font-bebas bg-bg/50 backdrop-blur-lg backdrop-saturate-200 rounded-full px-4 pt-2 pb-1 text-4xl text-text overflow-hidden">
+      <span class="inline-block show-from-hidden">Giuss<b>cos</b></span>
     </button>
 
     <NavDesktop />
