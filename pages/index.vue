@@ -5,6 +5,7 @@
   <HomeAboutMe />
   <HomeWorkV2 />
   <HomeServices />
+  <HomeStartWork />
 </template>
 
 <style scoped></style>
