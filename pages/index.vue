@@ -4,6 +4,7 @@
   <HomeJumbo />
   <HomeAboutMe />
   <HomeWorkV2 />
+  <HomeServices />
 </template>
 
 <style scoped></style>

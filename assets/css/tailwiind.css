@@ -2,39 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
   section {
-    @apply py-20
+    @apply py-20;
+  }
+
+  b {
+    @apply text-error;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply py-2 px-5 bg-bg text-text font-bold rounded-full hover:bg-text hover:text-bg focus:outline-none focus:ring focus:ring-current focus:ring-opacity-75 transition-300-standard;
+    @apply py-2 px-5 bg-bg/75 hover:bg-text/85 backdrop-blur-lg text-text hover:text-bg font-bold rounded-full focus:outline-none focus:ring focus:ring-current focus:ring-opacity-75 transition-300-standard;
   }
 
   .btn-secondary {
-    @apply py-2 px-5 bg-text text-bg font-bold rounded-full hover:bg-bg hover:text-text focus:outline-none focus:ring focus:ring-current focus:ring-opacity-75 transition-300-standard;
+    @apply py-2 px-5 bg-text/85 hover:bg-bg/75 backdrop-blur-lg text-bg hover:text-text font-bold rounded-full focus:outline-none focus:ring focus:ring-current focus:ring-opacity-75 transition-300-standard;
   }
 
   .btn-without-bg {
     @apply py-2 px-5 font-bebas rounded-full hover:underline underline-offset-1 focus:outline-none focus:ring focus:ring-current focus:ring-opacity-75 transition-300-standard;
   }
 
-  .title-big{
+  .title-big {
     @apply font-bebas text-7xl lg:text-[14.4vw] leading-none;
   }
 
-  .title-medium{
+  .title-medium {
     @apply font-bebas text-4xl lg:text-[5vw] leading-none;
   }
 
   .paragraph-small {
-    @apply text-sm lg:text-lg
+    @apply text-sm lg:text-lg;
   }
 
   .paragraph-medium {
-    @apply text-xl sm:text-2xl lg:text-3xl
+    @apply text-2xl sm:text-3xl lg:text-4xl;
   }
 }
 

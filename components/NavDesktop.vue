@@ -10,9 +10,15 @@
         </NuxtLink>
       </li>
       <li class="">
-        <NuxtLink to="#work"
+        <NuxtLink to="#works"
           class="font-bold text-lg uppercase text-text/50 hover:text-text transition-150-standard">
-          Work
+          Works
+        </NuxtLink>
+      </li>
+      <li class="">
+        <NuxtLink to="#services"
+          class="font-bold text-lg uppercase text-text/50 hover:text-text transition-150-standard">
+          Services
         </NuxtLink>
       </li>
     </ul>

@@ -43,7 +43,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="work">
+  <section id="works">
     <h2 class="title-medium uppercase mb-10">
       Recent works
     </h2>
