@@ -8,6 +8,8 @@ function openMenuToggle() {
 }
 
 function closeMenuToggle() {
+  myScrollTo(0)
+
   if (!menuToggle.value) return
 
   menuToggle.value = false;
@@ -16,9 +18,10 @@ function closeMenuToggle() {
 
 <template>
   <header class="fixed z-40 top-0 w-full p-5 flex items-center gap-8 flex-nowrap">
-    <NuxtLink @click="closeMenuToggle" to="/" class="font-bebas bg-bg/50 backdrop-blur-lg backdrop-saturate-200 rounded-full px-4 pt-2 pb-1 text-4xl text-text uppercase">
+    <button type="button" @click="closeMenuToggle"
+      class="font-bebas bg-bg/50 backdrop-blur-lg backdrop-saturate-200 rounded-full px-4 pt-2 pb-1 text-4xl text-text uppercase">
       Giusscos
-    </NuxtLink>
+    </button>
 
     <NavDesktop />
 

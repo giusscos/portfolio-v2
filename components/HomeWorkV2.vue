@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import IconArrowLink from './icons/IconArrowLink.vue';
-
 type workArray = {
   text: string,
   imageUrl?: string,

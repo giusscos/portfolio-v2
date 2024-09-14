@@ -2,15 +2,11 @@
 @import url('./bespoke-serif.css');
 @import url('./bebas-neue.css');
 @import url('./tailwiind.css');
+@import url('./lenis.css');
 
 :root {
     --bg: #f0f0f0;
     --text: #222;
-}
-
-*,
-html {
-    scroll-behavior: smooth;
 }
 
 body {

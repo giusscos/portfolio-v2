@@ -10,7 +10,7 @@
         class="paragraph-medium uppercase font-semibold hover:underline flex justify-center items-center gap-2">
         Email me
         <i class="block w-10 h-10 aspect-square">
-          <IconsIconArrowLink />
+          <IconArrowLink />
         </i>
       </a>
     </div>
