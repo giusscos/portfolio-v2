@@ -8,6 +8,11 @@
     --text: #222;
 }
 
+*,
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg);
     color: var(--text);

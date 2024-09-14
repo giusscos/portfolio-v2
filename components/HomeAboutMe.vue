@@ -1,12 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="py-40">
-    <h2 class="uppercase title-medium">
+  <section class="py-40" id="about">
+    <h2 class="sr-only uppercase">
       About me
     </h2>
-    <div class="grid grid-cols-12">
-      <p class="text-base sm:text-lg lg:text-xl leading-none col-span-12 sm:col-span-8 lg:col-span-6">
+    <div class="grid justify-items-center">
+      <p class="text-xl sm:text-2xl; lg:text-3xl leading-none w-full lg:w-1/2">
         I'm Giuseppe, a web and mobile freelance developer with over 2 years of professional experience. I'm specialized
         in
         front-end development using <b>Vue.js, Nuxt.js, Swift, React, and React Native</b>. On the back end, I primarily
@@ -15,10 +15,6 @@
         <br>
         I'm open to exciting collaborations and forward-thinking projects 🚀
       </p>
-      <NuxtLink to="/about"
-        class="btn-without-bg sm:col-span-4 lg:col-span-6 uppercase text-base sm:text-lg lg:text-2xl self-center">
-        More about me 🫣
-      </NuxtLink>
     </div>
   </section>
 </template>

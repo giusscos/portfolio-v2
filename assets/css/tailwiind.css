@@ -22,11 +22,15 @@
   }
 
   .title-big{
-    @apply font-bebas text-[14.4vw] leading-none;
+    @apply font-bebas text-7xl lg:text-[14.4vw] leading-none;
   }
 
   .title-medium{
-    @apply font-bebas text-[10vw] leading-none;
+    @apply font-bebas text-4xl lg:text-[5vw] leading-none;
+  }
+
+  .paragraph-small {
+    @apply text-sm lg:text-lg
   }
 }
 
