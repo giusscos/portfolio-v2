@@ -75,14 +75,7 @@ onMounted(() => {
       Socials
     </span>
 
-    <ul class="flex flex-nowrap items-center gap-4 my-5">
-      <li v-for="(element, index) in socials" :key="'social-' + index">
-        <a :href="element.path" target="_blank" :title="element.title"
-          class="font-normal text-sm uppercase text-bg/75 hover:text-bg hover:underline underline-offset-1 transition-150-standard">
-          {{ element.text }}
-        </a>
-      </li>
-    </ul>
+    <TheSocials />
 
     <span class="block text-sm font-normal">
       Other

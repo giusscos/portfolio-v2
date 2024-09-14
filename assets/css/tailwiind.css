@@ -32,6 +32,10 @@
   .paragraph-small {
     @apply text-sm lg:text-lg
   }
+
+  .paragraph-medium {
+    @apply text-xl sm:text-2xl lg:text-3xl
+  }
 }
 
 @layer utilities {

@@ -6,7 +6,7 @@
       About me
     </h2>
     <div class="grid justify-items-center">
-      <p class="text-xl sm:text-2xl; lg:text-3xl leading-none w-full lg:w-1/2">
+      <p class="paragraph-medium leading-none w-full lg:w-1/2">
         I'm Giuseppe, a web and mobile freelance developer with over 2 years of professional experience. I'm specialized
         in
         front-end development using <b>Vue.js, Nuxt.js, Swift, React, and React Native</b>. On the back end, I primarily

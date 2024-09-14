@@ -6,7 +6,7 @@
     <main class="py-20 px-5 grow">
       <slot />
     </main>
-    <footer>footer</footer>
+    <TheFooter />
   </div>
 </template>
 
