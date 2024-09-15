@@ -15,11 +15,11 @@ export const myScrollTo = (id: string | number) => {
 };
 
 export const myTo = (id: string | string[]) => {
-  gsap.from(id, {
+  gsap.to(id, {
     duration: 3,
     ease: "expo.inOut",
-    autoAlpha: 0,
-    y: '+=150%',
+    autoAlpha: 1,
+    y: 0,
     stagger: {
       each: 0.2,
     },

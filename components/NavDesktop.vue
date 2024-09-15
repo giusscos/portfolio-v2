@@ -9,7 +9,7 @@ const routes = useNavLinks();
     <ul class="flex gap-8">
       <li v-for="(element, index) in routes" :key="'route-desk-' + index" class="block overflow-hidden">
         <button type="button" @click="myScrollTo(element.path)" :title="element.title"
-          class="inline-block show-from-hidden font-bold text-lg uppercase text-text/50 hover:text-text transition-colors duration-150 ">
+          class="show-from-hidden font-bold text-lg uppercase text-text/50 hover:text-text transition-colors duration-150 ">
           {{ element.text }}
         </button>
       </li>
