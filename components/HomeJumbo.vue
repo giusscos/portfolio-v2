@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section id="home">
+  <section id="home" class="h-screen grid place-content-center">
     <h2 class="title-big leading-none">
       <!-- Frontend Developer <br> <b>Freelancer</b> -->
       <span class="inline-block overflow-hidden">
