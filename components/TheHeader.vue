@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import gsap from 'gsap';
+import { myScrollTo } from '~/utils/myGsap';
 
 const state = useMyState();
 
@@ -12,21 +12,12 @@ function openMenuToggle() {
   menuToggle.value = true;
 }
 
-function closeMenuToggle() {
-  gsap.registerPlugin(ScrollToPlugin);
-
-  toggleMenuAnimation(menuToggle.value);
-
-  gsap.to(window, {
-    duration: 2.5,
-    ease: "expo.inOut",
-    scrollTo: {
-      y: 0,
-      offsetY: 50,
-    },
-  });
+function scrollAndCloseMenu() {
+  myScrollTo(0)
 
   if (!menuToggle.value) return
+
+  toggleMenuAnimation(menuToggle.value);
 
   menuToggle.value = false;
 }
@@ -43,7 +34,7 @@ onMounted(() => {
 
 <template>
   <header class="fixed z-40 top-0 w-full p-5 flex items-center gap-8 flex-nowrap">
-    <button type="button" @click="closeMenuToggle"
+    <button type="button" @click="scrollAndCloseMenu"
       class="font-bebas bg-bg/50 backdrop-blur-lg backdrop-saturate-200 rounded-full px-4 pt-2 pb-1 text-4xl text-text overflow-hidden">
       <span class="show-from-hidden">Giuss<b>cos</b></span>
     </button>

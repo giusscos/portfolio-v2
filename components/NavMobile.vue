@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-
+import { myScrollTo } from "~/utils/myGsap";
 
 const routes = useNavLinks();
 
@@ -12,33 +10,25 @@ const menuToggle = state.menuToggle;
 function closeMenuToggle(id?: string) {
   if (!menuToggle.value) return
 
-  gsap.registerPlugin(ScrollToPlugin);
-
   toggleMenuAnimation(menuToggle.value)
-  menuToggle.value = false;
 
+  menuToggle.value = false;
+  
   if (!id) return;
 
-  gsap.to(window, {
-    duration: 2.5,
-    ease: "expo.inOut",
-    scrollTo: {
-      y: id,
-      offsetY: 50,
-    },
-  });
+  myScrollTo(id)
 }
 </script>
 
 <template>
   <nav id="navMenu"
-    class="lg:hidden invisible translate-x-[150%] fixed z-20 top-0 right-0 w-full max-w-full sm:w-fit sm:max-w-fit h-fit max-h-fit p-5 sm:px-10 sm:rounded-l-2xl text-bg bg-text/85 backdrop-blur-lg backdrop-saturate-200 shadow-lg transition-transform-300-standard">
+    class="lg:hidden invisible translate-x-[150%] fixed z-20 top-0 right-0 w-full max-w-full sm:w-fit sm:max-w-fit h-fit max-h-fit p-5 sm:px-10 md:px-14 lg:px-16 sm:rounded-l-2xl text-bg bg-text/85 backdrop-blur-lg backdrop-saturate-200 shadow-lg transition-transform-300-standard">
 
     <button type="button" @click="closeMenuToggle()" class="block ml-auto btn-secondary uppercase font-tanker">
       <span>Close</span>
     </button>
 
-    <ul class="flex flex-col md:flex-row gap-x-6 md:gap-x-12 gap-y-2 md:gap-y-8 my-5" id="ulRoutes">
+    <ul class="flex flex-col gap-y-2 md:gap-y-8 my-5" id="ulRoutes">
       <li v-for="(element, index) in routes" :key="'route-' + index" class="overflow-hidden">
         <button type="button" @click="closeMenuToggle(element.path)" :title="element.title"
           class="font-extrabold font-bebas text-5xl text-bg/75 hover:text-bg translate-y-[150%] transition-color-150-standard">
