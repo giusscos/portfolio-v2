@@ -32,7 +32,7 @@ const services = ref([
 onMounted(() => {
   gsap.from('.services-scroll', {
     scrollTrigger: {
-      markers: true,
+      // markers: true,
       trigger: '.sercises-scroll-trigger',
       scrub: .5,
       start: '-20% center',
