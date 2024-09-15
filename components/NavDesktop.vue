@@ -2,11 +2,12 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollToPlugin);
 
 const routes = useNavLinks();
 
 function scrollTo(id: string) {
+  gsap.registerPlugin(ScrollToPlugin);
+  
   if (!id) return;
 
   gsap.to(window, {

@@ -2,7 +2,6 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollToPlugin);
 
 const routes = useNavLinks();
 
@@ -12,6 +11,8 @@ const menuToggle = state.menuToggle;
 
 function closeMenuToggle(id?: string) {
   if (!menuToggle.value) return
+
+  gsap.registerPlugin(ScrollToPlugin);
 
   toggleMenuAnimation(menuToggle.value)
   menuToggle.value = false;

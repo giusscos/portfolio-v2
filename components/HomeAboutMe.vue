@@ -3,9 +3,9 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 
-gsap.registerPlugin(ScrollTrigger);
-
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
   const text = new SplitType('.stagger-words');
 
   text.lines?.forEach((el) => {

@@ -2,8 +2,6 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollToPlugin);
-
 const state = useMyState();
 
 const menuToggle = state.menuToggle;
@@ -15,7 +13,9 @@ function openMenuToggle() {
 }
 
 function closeMenuToggle() {
-  toggleMenuAnimation(menuToggle.value)
+  gsap.registerPlugin(ScrollToPlugin);
+
+  toggleMenuAnimation(menuToggle.value);
 
   gsap.to(window, {
     duration: 2.5,

@@ -2,8 +2,6 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const services = ref([
   {
     title: 'Consult',
@@ -30,6 +28,8 @@ const services = ref([
 ]);
 
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+  
   const tl = gsap.timeline();
 
   tl.from('.services-scroll', {
