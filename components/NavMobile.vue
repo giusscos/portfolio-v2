@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
+
 const routes = useNavLinks();
 
 const state = useMyState();
@@ -13,7 +18,14 @@ function closeMenuToggle(id?: string) {
 
   if (!id) return;
 
-  myScrollTo(id);
+  gsap.to(window, {
+    duration: 2.5,
+    ease: "expo.inOut",
+    scrollTo: {
+      y: id,
+      offsetY: 50,
+    },
+  });
 }
 </script>
 

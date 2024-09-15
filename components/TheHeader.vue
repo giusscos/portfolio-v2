@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
 
 const state = useMyState();
 
@@ -13,8 +16,15 @@ function openMenuToggle() {
 
 function closeMenuToggle() {
   toggleMenuAnimation(menuToggle.value)
-  
-  myScrollTo(0)
+
+  gsap.to(window, {
+    duration: 2.5,
+    ease: "expo.inOut",
+    scrollTo: {
+      y: 0,
+      offsetY: 50,
+    },
+  });
 
   if (!menuToggle.value) return
 
