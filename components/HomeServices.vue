@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 const services = ref([
   {
     title: 'Consult',
@@ -23,6 +28,26 @@ const services = ref([
     This process ensures that the site performs flawlessly in terms of functionality, design, and responsiveness, delivering a consistent user experience regardless of the platform.`,
   },
 ]);
+
+onMounted(() => {
+  gsap.from('.services-scroll', {
+    scrollTrigger: {
+      markers: true,
+      trigger: '.sercises-scroll-trigger',
+      scrub: .5,
+      start: '-20% center',
+      end: '40% center',
+    },
+    x: '-=100vw',
+    y: '-=100vh',
+    stagger: {
+      each: .7,
+      from: 'random',
+    },
+    duration: 10,
+    ease: 'expo.inOut'
+  });
+})
 </script>
 
 <template>
@@ -30,9 +55,9 @@ const services = ref([
     <h2 class="title-medium uppercase mb-10">
       The path
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sercises-scroll-trigger">
       <div v-for="(element, index) in services" :key="'service-' + index"
-        class="w-full h-full p-5 border-2 border-text rounded-xl flex flex-col gap-20">
+        class="services-scroll w-full h-full p-5 bg-bg border-2 border-text rounded-xl flex flex-col gap-20">
         <span class="paragraph-medium font-tanker text-error font-semibold">.0{{ index + 1 }}</span>
         <div class="grow text-right h-full flex flex-col">
           <h2 class="title-medium font-bebas">{{ element.title }}</h2>
