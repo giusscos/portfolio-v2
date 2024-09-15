@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { gsap } from 'gsap';
+
 const state = useMyState();
 
 const menuToggle = state.menuToggle;
@@ -16,7 +18,12 @@ function closeMenuToggle() {
 }
 
 onMounted(() => {
-  myTo(['.show-from-hidden']);
+  gsap.to('.show-from-hidden', {
+    duration: 3,
+    ease: "expo.inOut",
+    y: 0,
+    stagger: .3
+  });
 })
 </script>
 

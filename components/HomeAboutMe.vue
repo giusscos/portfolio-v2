@@ -1,28 +1,36 @@
 <script setup lang="ts">
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import SplitType from 'split-type'
+import SplitType from 'split-type';
 
 gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
   const text = new SplitType('.stagger-words');
 
-  text.words?.forEach((el) => el.style.opacity = '0.2');
+  text.lines?.forEach((el) => {
+    el.style.lineHeight = '1.3'
+    el.style.overflow = 'hidden'
+  });
 
-  gsap.to(text.words, {
+  text.chars?.forEach((el) => {
+    el.style.opacity = '0'
+    el.style.transform = 'translateY(100%)'
+  });
+
+  gsap.to(text.chars, {
     scrollTrigger: {
-      trigger: '.scroll-trigger',
-      // pin: true,
       // markers: true,
-      scrub: 3,
+      trigger: '.scroll-trigger',
+      scrub: .5,
       start: '20% bottom',
       end: 'bottom 80%',
     },
+    y: 0,
     opacity: 1,
-    stagger: 2,
-    delay: 1,
-    duration: 5,
+    stagger: .3,
+    delay: .3,
+    duration: 30,
     ease: 'expo.inOut'
   });
 })
@@ -33,8 +41,8 @@ onMounted(() => {
     <h2 class="sr-only uppercase">
       About me
     </h2>
-    <div class="grid place-content-center scroll-trigger">
-      <p class="paragraph-medium font-medium w-full lg:px-20 stagger-words">
+    <div class="grid scroll-trigger">
+      <p class="paragraph-big leading-none font-medium w-full lg:w-10/12 lg:mx-auto stagger-words">
         I'm Giuseppe, a web and mobile freelance developer with over 2 years of professional experience. I'm specialized
         in
         front-end development using <b>Vue</b>, <b>Nuxt</b>, <b>React</b>, <b>Next</b> and <b>React Native</b>. On the

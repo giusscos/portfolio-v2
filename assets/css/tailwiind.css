@@ -33,12 +33,16 @@
     @apply font-bebas text-4xl lg:text-[5vw] leading-none;
   }
 
-  .paragraph-small {
-    @apply text-sm lg:text-lg;
+  .paragraph-big {
+    @apply text-4xl sm:text-5xl lg:text-6xl;
   }
 
   .paragraph-medium {
     @apply text-2xl sm:text-3xl lg:text-4xl;
+  }
+
+  .paragraph-small {
+    @apply text-sm lg:text-lg;
   }
 }
 

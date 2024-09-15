@@ -9,19 +9,6 @@ export const myScrollTo = (id: string | number) => {
     ease: "expo.inOut",
     scrollTo: {
       y: id,
-      // autoKill: true,
-    },
-  });
-};
-
-export const myTo = (id: string | string[]) => {
-  gsap.to(id, {
-    duration: 3,
-    ease: "expo.inOut",
-    autoAlpha: 1,
-    y: 0,
-    stagger: {
-      each: 0.2,
     },
   });
 };
