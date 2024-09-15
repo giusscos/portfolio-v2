@@ -26,9 +26,9 @@ onMounted(() => {
         Let's start talking about your <b class="startw-scroll">idea</b>!
       </h2>
       <a href="mailto:giusscos@icloud.com" target="_blank" title="Email me and let's start work on your idea"
-        class="paragraph-medium uppercase font-semibold underline lg:no-underline hover:underline [&_i]:hover:rotate-0 flex justify-center items-center">
+        class="paragraph-medium font-bebas underline lg:no-underline hover:underline [&_i]:hover:rotate-0 flex justify-center items-center">
         Email me
-        <i class="block w-7 h-7 sm:w-10 sm:h-10 aspect-square rotate-45 transition-300-standard">
+        <i class="block w-7 h-7 sm:w-10 sm:h-10 aspect-square rotate-45 transition-transform-300-standard">
           <IconArrowLink />
         </i>
       </a>

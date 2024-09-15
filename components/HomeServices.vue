@@ -30,7 +30,20 @@ const services = ref([
 ]);
 
 onMounted(() => {
-  gsap.from('.services-scroll', {
+  const tl = gsap.timeline();
+
+  tl.from('.services-scroll', {
+    scrollTrigger: {
+      // markers: true,
+      trigger: '.sercises-scroll-trigger',
+      scrub: .5,
+      start: '-50% center',
+      end: '-20% center',
+    },
+    autoAlpha: 0,
+    duration: 1,
+    ease: 'expo.inOut'
+  }).from('.services-scroll', {
     scrollTrigger: {
       // markers: true,
       trigger: '.sercises-scroll-trigger',

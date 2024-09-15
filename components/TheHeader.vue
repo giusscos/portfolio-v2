@@ -6,10 +6,14 @@ const state = useMyState();
 const menuToggle = state.menuToggle;
 
 function openMenuToggle() {
+  toggleMenuAnimation(menuToggle.value)
+
   menuToggle.value = true;
 }
 
 function closeMenuToggle() {
+  toggleMenuAnimation(menuToggle.value)
+  
   myScrollTo(0)
 
   if (!menuToggle.value) return
@@ -36,11 +40,11 @@ onMounted(() => {
 
     <NavDesktop />
 
-    <button type="button" @click="openMenuToggle"
-      :class="{ 'translate-x-[400px]': menuToggle, 'translate-x-0': !menuToggle }"
-      class="lg:hidden z-30 ml-auto btn-primary uppercase font-tanker">
-      Menu
+    <button type="button" @click="openMenuToggle" id="menuToggleButton"
+      class="lg:hidden z-30 ml-auto btn-primary uppercase font-tanker overflow-hidden">
+      <span class="show-from-hidden">Menu</span>
     </button>
+
     <NavMobile />
   </header>
 </template>

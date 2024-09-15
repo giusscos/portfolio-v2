@@ -39,7 +39,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="home" class="h-screen grid">
+  <section id="home" class="h-screen">
     <h2 class="title-big jumbo-stagger-words">
       Frontend Developer <br> <b>Freelancer</b>
     </h2>

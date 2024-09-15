@@ -55,7 +55,7 @@ onMounted(() => {
           <p :href="element.url" target="_blank" :title="element.title"
             class="font-bebas text-xl lg:text-2xl w-full flex justify-start items-center">
             {{ element.text }}
-            <i class="block w-6 h-6 lg:w-8 lg:h-8 aspect-square rotate-45 transition-150-standard">
+            <i class="block w-6 h-6 lg:w-8 lg:h-8 aspect-square rotate-45 transition-transform-150-standard">
               <IconArrowLink />
             </i>
           </p>

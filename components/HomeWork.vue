@@ -68,13 +68,13 @@ function handleOnMouseLeave(el: MouseEvent) {
         @mouseleave="handleOnMouseLeave" class="relative overflow-y-hidden title-big">
         <NuxtLink :to="'/'" :title="element.title" class="text">
           <div v-for="(char, idx) in element.textChars" :key="'char-anchor-' + idx" :class="`duration-[${idx * 100}ms]`"
-            class="inline-block relative origin-top-left transition-300-standard">
+            class="inline-block relative origin-top-left transition-transform-300-standard">
             {{ char }}
           </div>
         </NuxtLink>
         <span class="absolute text-error inset-0">
           <div v-for="(char, idx) in element.textChars" :key="'char-shadow-' + idx" :class="`duration-[${idx * 100}ms]`"
-            class="inline-block relative origin-bottom-left translate-y-[300px] transition-300-standard">
+            class="inline-block relative origin-bottom-left translate-y-[300px] transition-transform-300-standard">
             {{ char }}
           </div>
         </span>
