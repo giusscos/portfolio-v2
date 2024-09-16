@@ -6,6 +6,10 @@
   section {
     @apply py-20;
   }
+  
+  a:focus, button:focus {
+    @apply focus:outline-none focus:ring focus:ring-current focus:ring-opacity-75 focus:ring-offset-1;
+  }
 
   b {
     @apply text-error;

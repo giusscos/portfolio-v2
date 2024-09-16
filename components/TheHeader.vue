@@ -41,7 +41,7 @@ onMounted(() => {
 
     <NavDesktop />
 
-    <button type="button" @click="openMenuToggle" id="menuToggleButton"
+    <button type="button" :aria-expanded="menuToggle" aria-controls="navMenu" @click="openMenuToggle" id="menuToggleButton"
       class="lg:hidden z-30 ml-auto btn-primary uppercase font-tanker overflow-hidden">
       <span class="show-from-hidden">Menu</span>
     </button>
