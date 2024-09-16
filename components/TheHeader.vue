@@ -23,10 +23,10 @@ function scrollAndCloseMenu() {
 }
 
 onMounted(() => {
-  gsap.to('.show-from-hidden', {
+  gsap.from('.show-from-hidden', {
     duration: 3,
     ease: "expo.inOut",
-    y: 0,
+    y: "+=150%",
     stagger: .3
   });
 })
@@ -53,6 +53,5 @@ onMounted(() => {
 <style>
 .show-from-hidden {
   display: inline-block;
-  transform: translateY(-150%);
 }
 </style>

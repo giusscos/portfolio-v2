@@ -18,22 +18,25 @@ onMounted(() => {
     el.style.transform = 'translateY(100%)'
   });
 
-  text.chars[2].style.transformOrigin = '70% 70%'
-  text.chars[2].style.position = 'relative'
-  text.chars[2].style.left = '-0.2em'
+  if (text.chars) {
+    const handChar = text.chars[3]
+    handChar.style.transformOrigin = '70% 70%'
+    handChar.style.position = 'relative'
+    handChar.style.left = '-0.2em'
 
-  gsap.to(text.chars[2], {
-    scrollTrigger: {
-      // markers: true,
-      trigger: '.scroll-trigger',
-      start: '20% bottom',
-      end: 'bottom 80%',
-    },
-    rotate: '45deg',
-    repeat: -1,
-    yoyo: true,
-    ease: 'power3.inOut'
-  })
+    gsap.to(handChar, {
+      scrollTrigger: {
+        // markers: true,
+        trigger: '.scroll-trigger',
+        start: '20% bottom',
+        end: 'bottom 80%',
+      },
+      rotate: '45deg',
+      repeat: -1,
+      yoyo: true,
+      ease: 'power3.inOut'
+    })
+  }
 
   gsap.to(text.chars, {
     scrollTrigger: {
@@ -75,11 +78,17 @@ onMounted(() => {
 <style scoped>
 .stagger-words {
   font-kerning: none;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently */
 }
 </style>

@@ -14,8 +14,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "it",
       },
-      title:
-        "Giuseppe Cosenza - Freelance Frontend Developer",
+      title: "Giuseppe Cosenza - Freelance Frontend Developer",
       meta: [
         {
           name: "description",
@@ -29,8 +28,7 @@ export default defineNuxtConfig({
         { property: "og:url", content: "https://giusscos.it" },
         {
           property: "og:title",
-          content:
-            "Giuseppe Cosenza - Freelance Frontend Developer",
+          content: "Giuseppe Cosenza - Freelance Frontend Developer",
         },
         {
           property: "og:description",
@@ -44,11 +42,13 @@ export default defineNuxtConfig({
 
         // Twitter
         { property: "twitter:card", content: "summary_large_image" },
-        { property: "twitter:url", content: "https://giusscos.it/images/small-banner.png" },
+        {
+          property: "twitter:url",
+          content: "https://giusscos.it/images/small-banner.png",
+        },
         {
           property: "twitter:title",
-          content:
-            "Giuseppe Cosenza - Freelance Frontend Developer",
+          content: "Giuseppe Cosenza - Freelance Frontend Developer",
         },
         {
           property: "twitter:description",

@@ -20,16 +20,16 @@ onMounted(() => {
     lenis.raf(time * 500)
   })
 
-  gsap.ticker.lagSmoothing()
+  gsap.ticker.lagSmoothing(0)
 })
 </script>
 
 <template>
-  <HomeJumbo />
-  <HomeAboutMe />
-  <HomeWorkV2 />
-  <HomeServices />
-  <HomeStartWork />
+    <HomeJumbo />
+    <HomeAboutMe />
+    <HomeWorkV2 />
+    <HomeServices />
+    <HomeStartWork />
 </template>
 
 <style scoped></style>
