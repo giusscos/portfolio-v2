@@ -60,29 +60,13 @@ onMounted(() => {
     </h2>
     <div class="grid scroll-trigger">
       <p class="paragraph-big leading-none font-medium w-full lg:mx-auto stagger-words">
-        <!-- I'm Giuseppe, a web and mobile freelance developer with over 2 years of professional experience. I'm specialized
-        in
-        front-end development using <b>Vue</b>, <b>Nuxt</b>, <b>React</b>, <b>Next</b> and <b>React Native</b>. On the
-        back end, I primarily
-        use Laravel (PHP) and am currently exploring serverless solutions like <b>Supabase</b>, which I find highly
-        promising.
-        <br>
-        I'm open to exciting collaborations and forward-thinking projects 🚀 -->
-
-        <!-- Hi 👋 I’m Giuseppe, a web and mobile freelance developer. I specialise in frontend development
-        using <b>Vue</b>, <b>Nuxt</b>, <b>React</b>, <b>Next</b> and <b>React Native</b>. On the back end, I primarily
-        use Laravel (PHP) and am currently
-        exploring serverless solutions like
-        <b>Supabase</b>, which I find highly promising. I'm open to exciting collaborations and forward-thinking projects. 🚀 -->
-
-        Hi 👋 I’m Giuseppe, a web developer with the ability to transform a simple concept into a
-        remarkable and immersive experience. Throughout my career, I have consistently worked across both frontend and
-        backend development, employing cutting-edge, efficient, and accessible technologies. Among these, I have a
-        particular affinity for crafting websites using <b>Vue</b>, <b>Nuxt</b>, <b>WebGL</b> and <b>Supabase</b>. In
-        designing such experiences, I
-        am meticulous in my attention to quality, detail, and performance. From a young age, I have harbored a deep
-        fascination with precision and an innate drive for perfectionism. I take pride in staying abreast of the latest
-        advancements and in proposing optimal solutions tailored to any creative vision 🚀 
+        Hi, 👋 I’m Giuseppe, a web developer skilled in transforming simple concepts into exceptional, immersive
+        experiences. My career spans both frontend and backend development, where I leverage advanced, efficient, and
+        accessible technologies. I have a particular passion for building dynamic websites using <b>Vue</b>,
+        <b>Nuxt</b>, <b>WebGL</b> and <b>Supabase</b>. My approach is defined by a meticulous attention to quality,
+        detail, and performance. Driven by a
+        lifelong fascination with precision and a commitment to perfection, I stay current with the latest advancements
+        to deliver optimal solutions tailored to any creative vision.
       </p>
     </div>
   </section>
@@ -91,5 +75,11 @@ onMounted(() => {
 <style scoped>
 .stagger-words {
   font-kerning: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
 }
 </style>

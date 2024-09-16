@@ -31,7 +31,7 @@ const socials = ref([
   <ul class="flex flex-nowrap items-center gap-4" id="ulSocials">
     <li v-for="(element, index) in socials" :key="'social-' + index" class="overflow-hidden">
       <a :href="element.path" target="_blank" :title="element.title" :class="isMenu ? 'translate-y-[150%]' : ''"
-        class="inline-block font-normal text-sm uppercase text-current underline sm:no-underline active:underline hover:underline underline-offset-1">
+        class="inline-block font-normal text-sm uppercase text-current underline lg:no-underline active:underline hover:underline underline-offset-1">
         {{ element.text }}
       </a>
     </li>

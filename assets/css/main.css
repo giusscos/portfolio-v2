@@ -13,3 +13,14 @@ body {
     background-color: var(--bg);
     color: var(--text);
 }
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--bg);
+    background: var(--text);
+}
+
+::selection {
+    color: var(--bg);
+    background: var(--text);
+}
