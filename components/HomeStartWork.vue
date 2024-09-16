@@ -23,7 +23,8 @@ onMounted(() => {
   <section class="py-80">
     <div class="grid place-content-center startw-scroll-trigger">
       <h2 class="title-medium text-center">
-        Let's start talking about your <b class="startw-scroll">idea</b>!
+        <!-- Let's start talking about your <b class="startw-scroll">idea</b>! -->
+        Let’s start exploring your concept and turning it into <b class="startw-scroll">reality</b>!
       </h2>
       <a href="mailto:giusscos@icloud.com" target="_blank" title="Email me and let's start work on your idea"
         class="paragraph-medium font-bebas underline lg:no-underline hover:underline [&_i]:hover:rotate-0 flex justify-center items-center">

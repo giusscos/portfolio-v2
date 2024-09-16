@@ -27,7 +27,8 @@ function menuAnimation() {
 
   tl.to("#navMenu", {
     autoAlpha: 1,
-  }).to("#navMenu", {
+    duration: 0
+  }, '<').to("#navMenu", {
     x: 0,
     duration: 0.3,
     ease: "power3.out",

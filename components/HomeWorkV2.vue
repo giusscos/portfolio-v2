@@ -47,7 +47,7 @@ onMounted(() => {
     </h2>
     <ul class="block sticky top-0 left-0">
       <li v-for="(element, index) in works" :key="'work-' + index" ref="stickyStack"
-        class="bg-bg border-2 border-text rounded-3xl p-3 lg:p-5 flex flex-col gap-1 lg:gap-4 sticky left-0 [&_i]:hover:rotate-0">
+        class="bg-bg border-2 border-text rounded-xl sm:rounded-3xl p-3 lg:p-5 flex flex-col gap-1 lg:gap-4 sticky left-0 [&_i]:hover:rotate-0">
         <a :href="element.url" target="_blank" :title="element.title" class="absolute inset-0">
           <span class="sr-only">{{ element.text }}</span>
         </a>
@@ -61,8 +61,7 @@ onMounted(() => {
           </p>
         </div>
         <img v-if="element.imageUrl" :src="element.imageUrl" :alt="'Thumbnail website ' + element.text"
-          class="w-full aspect-video rounded-2xl" />
-        <div v-if="!element.imageUrl" class="w-full aspect-video bg-gray-300 rounded-lg"></div>
+          class="w-full aspect-video rounded-lg sm:rounded-2xl" />
       </li>
     </ul>
   </section>

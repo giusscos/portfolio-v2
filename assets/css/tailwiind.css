@@ -30,11 +30,11 @@
   }
 
   .title-medium {
-    @apply font-bebas text-4xl lg:text-[5vw] leading-none;
+    @apply font-bebas text-4xl lg:text-6xl leading-none;
   }
 
   .paragraph-big {
-    @apply text-3xl sm:text-5xl lg:text-6xl;
+    @apply text-3xl sm:text-4xl lg:text-5xl;
   }
 
   .paragraph-medium {

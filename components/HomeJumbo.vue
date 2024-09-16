@@ -39,12 +39,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="home" class="h-screen">
+  <section id="home" class="h-screen py-0">
     <h2 class="title-big jumbo-stagger-words">
-      Frontend Developer <br> <b>Freelancer</b>
+      <!-- Frontend Developer <br> <b>Freelancer</b> -->
+      <b>Freelance</b> Frontend Developer
     </h2>
     <p class="paragraph-small leading-none w-2/3 lg:w-3/5 jumbo-stagger-lines overflow-hidden">
-      Create websites with a focus on stunning animations, details, and user interactions.
+      <!-- Create websites with a focus on stunning animations, details, and user interactions. -->
+      Create websites with breathtaking animations, meticulous attention to detail, and exceptional user interactions.
     </p>
   </section>
 </template>

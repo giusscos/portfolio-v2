@@ -18,7 +18,7 @@ onMounted(() =>{
     lenis.raf(time * 500)
   })
   
-  gsap.ticker.lagSmoothing(0)
+  gsap.ticker.lagSmoothing()
 })
 </script>
 
