@@ -22,7 +22,7 @@ function closeMenuToggle(id?: string) {
 
 <template>
   <nav id="navMenu"
-    class="lg:hidden invisible translate-x-[150%] fixed z-20 top-0 right-0 w-full max-w-full sm:w-fit sm:max-w-fit h-fit max-h-fit p-5 sm:px-10 md:px-14 lg:px-16 sm:rounded-l-2xl text-bg bg-text/85 backdrop-blur-lg backdrop-saturate-200 shadow-lg transition-transform-300-standard">
+    class="lg:hidden invisible translate-x-[100%] fixed z-20 top-0 right-0 w-full max-w-full sm:w-fit sm:max-w-fit h-fit max-h-fit p-5 sm:px-10 md:px-14 lg:px-16 sm:rounded-l-2xl text-bg bg-text/85 backdrop-blur-lg backdrop-saturate-200 shadow-lg transition-transform-300-standard">
 
     <button type="button" aria-controls="navMenu" :aria-expanded="menuToggle" @click="closeMenuToggle()" class="block ml-auto btn-secondary uppercase font-tanker">
       <span>Close</span>

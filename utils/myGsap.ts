@@ -20,26 +20,28 @@ function menuAnimation() {
   tl.to("#menuToggleButton", {
     x: "+=100vw",
     duration: 0.3,
-    ease: "power3.in",
+    ease: "expo.inOut",
   }).to("#menuToggleButton", {
     autoAlpha: 0,
+    duration: 0
   });
 
   tl.to("#navMenu", {
     autoAlpha: 1,
-    duration: 0
+    duration: 0,
+    // ease: 'expo.inOut'
   }, '<').to("#navMenu", {
     x: 0,
-    duration: 0.3,
-    ease: "power3.out",
-  });
+    duration: 1,
+    ease: "expo.inOut",
+  }, '<');
 
   tl.to(
     ["#ulRoutes li *", "#navMenu p *", "#ulSocials li *"],
     {
       y: 0,
-      duration: 0.5,
-      stagger: 0.3,
+      duration: 0.6,
+      stagger: 0.1,
       ease: "expo.inOut",
     },
     ">"
@@ -52,6 +54,6 @@ export const toggleMenuAnimation = (menuState: boolean) => {
   if (!menuState) {
     tl.play();
   } else {
-    tl.timeScale(1.6).reverse();
+    tl.reverse();
   }
 };

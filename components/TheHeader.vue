@@ -27,7 +27,8 @@ onMounted(() => {
     duration: 3,
     ease: "expo.inOut",
     y: "+=150%",
-    stagger: .3
+    stagger: .3,
+    delay: 0.7
   });
 })
 </script>

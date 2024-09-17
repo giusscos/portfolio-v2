@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 
+const loading = ref(true);
+
 onMounted(() => {
   // myScrollTo(0);
 
@@ -21,15 +23,32 @@ onMounted(() => {
   })
 
   gsap.ticker.lagSmoothing(0)
+
+  gsap.to('.loader-children', {
+    duration: 0.7,
+    ease: "expo.inOut",
+    y: "-=100vh",
+    stagger: {
+      each: 0.1,
+      from: 'start'
+    },
+    onComplete: () => { loading.value = false; }
+  });
 })
 </script>
 
 <template>
-    <HomeJumbo />
-    <HomeAboutMe />
-    <HomeWorkV2 />
-    <HomeServices />
-    <HomeStartWork />
+  <TheLoader v-if="loading" />
+  <template v-else-if="!loading">
+    <main class="py-20 px-5 h-full grow">
+      <HomeJumbo />
+      <HomeAboutMe />
+      <HomeWorkV2 />
+      <HomeServices />
+      <HomeStartWork />
+    </main>
+    <TheFooter />
+  </template>
 </template>
 
 <style scoped></style>
