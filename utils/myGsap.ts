@@ -14,10 +14,10 @@ export const myScrollTo = (id: string | number) => {
   });
 };
 
-const tl = gsap.timeline();
+const tlMenu = gsap.timeline();
 
 function menuAnimation() {
-  tl.to("#menuToggleButton", {
+  tlMenu.to("#menuToggleButton", {
     x: "+=100vw",
     duration: 0.3,
     ease: "expo.inOut",
@@ -26,21 +26,22 @@ function menuAnimation() {
     duration: 0
   });
 
-  tl.to("#navMenu", {
+  tlMenu.to("#navMenu", {
     autoAlpha: 1,
-    duration: 0,
-    // ease: 'expo.inOut'
-  }, '<').to("#navMenu", {
-    x: 0,
-    duration: 1,
-    ease: "expo.inOut",
+    duration: 0.3,
   }, '<');
 
-  tl.to(
+  tlMenu.to("#navMenu", {
+    x: 0,
+    duration: 0.7,
+    ease: "expo.inOut",
+  });
+
+  tlMenu.to(
     ["#ulRoutes li *", "#navMenu p *", "#ulSocials li *"],
     {
       y: 0,
-      duration: 0.6,
+      duration: 0.4,
       stagger: 0.1,
       ease: "expo.inOut",
     },
@@ -52,8 +53,8 @@ export const toggleMenuAnimation = (menuState: boolean) => {
   menuAnimation();
 
   if (!menuState) {
-    tl.play();
+    tlMenu.play();
   } else {
-    tl.reverse();
+    tlMenu.reverse();
   }
 };
