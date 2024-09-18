@@ -11,7 +11,7 @@ const socials = ref([
   },
   {
     text: 'Lin',
-    path: 'https://linkedin.com/in/giuseppe-cosenza',
+    path: 'https://linkedin.com/in/giuseppepio-cosenza',
     title: 'Visit my LinkedIn account'
   },
   {
