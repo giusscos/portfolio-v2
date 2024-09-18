@@ -40,10 +40,10 @@ onMounted(() => {
 <template>
   <TheLoader v-if="loading" />
   <template v-else-if="!loading">
-    <main class="py-20 px-5 h-full grow">
+    <main class="py-20 h-full grow">
       <HomeJumbo />
       <HomeAboutMe />
-      <HomeWorkV2 />
+      <HomeWork />
       <HomeServices />
       <HomeStartWork />
     </main>
