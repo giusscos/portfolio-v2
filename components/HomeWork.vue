@@ -89,7 +89,7 @@ onMounted(() => {
 
       <ul class="py-10 px-20 flex items-center gap-10 lg:gap-20">
         <li v-for="(element, index) in works" :key="'work-' + index" ref="stickyStack"
-          class="relative w-full min-h-[90vh] h-full max-h-[90vh] aspect-video rounded-xl lg:rounded-3xl my-5 overflow-hidden">
+          class="relative w-full min-h-[70vh] lg:min-h-[80vh] h-full max-h-[70vh] lg:max-h-[80vh] aspect-video rounded-xl lg:rounded-3xl my-5 overflow-hidden">
           <img v-if="element.imageUrl" :src="element.imageUrl" :alt="'Thumbnail website ' + element.text"
             class="block w-full h-full object-cover object-center" />
 
