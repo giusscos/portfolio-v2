@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: "it",
+        lang: "en",
       },
       title: "Giuseppe Cosenza - Freelance Frontend Developer",
       meta: [

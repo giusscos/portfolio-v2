@@ -42,7 +42,7 @@ onMounted(() => {
   const tl = gsap.timeline();
 
   tl.to('.color-change', {
-    background: '#222',
+    background: '#111',
     duration: 0.5,
     scrollTrigger: {
       trigger: '.color-change',

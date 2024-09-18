@@ -19,11 +19,6 @@ const socials = ref([
     path: 'https://t.me/giusscos',
     title: 'Send me a message on Telegram'
   },
-  // {
-  //   text: 'X',
-  //   path: 'https://x.com/giusscos',
-  //   title: 'Visit my X account'
-  // },
 ]);
 </script>
 

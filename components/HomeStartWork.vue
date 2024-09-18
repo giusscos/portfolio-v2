@@ -13,7 +13,7 @@ onMounted(() => {
       end: 'center center',
       scrub: .5,
     },
-    color: '#222',
+    color: '#111',
     ease: 'expo.inOut'
   });
 })

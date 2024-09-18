@@ -44,7 +44,7 @@ onMounted(() => {
       <HomeJumbo />
       <HomeAboutMe />
       <HomeWork />
-      <HomeServices />
+      <HomeServicesV2 />
       <HomeStartWork />
     </main>
     <TheFooter />

@@ -17,7 +17,7 @@ export default {
     extend: {
       colors: {
         bg: "#f0f0f0",
-        text: "#222",
+        text: "#111",
         accent: "#ffd400",
         error: "#e60000",
       },
