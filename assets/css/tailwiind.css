@@ -37,6 +37,10 @@
     @apply font-bebas text-4xl lg:text-6xl leading-none;
   }
 
+  .title-small {
+    @apply font-bebas text-2xl lg:text-4xl leading-none;
+  }
+
   .paragraph-big {
     @apply text-3xl sm:text-4xl lg:text-5xl;
   }
