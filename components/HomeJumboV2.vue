@@ -10,7 +10,7 @@
       </div>
       <div class="col-span-3 border-2 border-text rounded-3xl p-5">
         <p class="text-xl py-20">
-          giusscos@icloud.com
+          hello@giusscos.com
         </p>
       </div>
       <div class="col-span-3 border-2 border-text rounded-3xl p-5">

@@ -17,6 +17,24 @@ const hScroll = ref<HTMLElement>();
 
 const works = ref<workArray[]>([
   {
+    text: 'ByJo',
+    imageUrl: '/images/ByJo.png',
+    url: 'https://apps.apple.com/it/app/byjo-your-finance-tracker/id6738330716?l=en-GB',
+    title: 'Explore byjo project'
+  },
+  {
+    text: 'apple tv (clone)',
+    imageUrl: '/images/appletv-clone.png',
+    url: 'https://contra.com/p/QOrOPRLR-apple-tv-clone-improved-with-carousel-animations',
+    title: 'Explore apple tv (clone) project'
+  },
+  {
+    text: 'pomotask',
+    imageUrl: '/images/pomotask.png',
+    url: 'https://apps.apple.com/it/app/pomotask-progressive-timer/id6736973019?l=en-GB',
+    title: 'Explore pomotask project'
+  },
+  {
     text: 'pcasa',
     category: 'e-commerce',
     stack: 'Nuxt - Supabase',
@@ -43,7 +61,7 @@ onMounted(() => {
 
   tl.to('.color-change', {
     background: '#111',
-    duration: 0.5,
+    duration: 1,
     scrollTrigger: {
       trigger: '.color-change',
       start: 'center center',
@@ -53,7 +71,7 @@ onMounted(() => {
     },
   }).to('.horizontal-scroll', {
     x: -(hScroll.value.clientWidth - section.value.clientWidth),
-    duration: 1,
+    duration: 2,
     scrollTrigger: {
       // markers: true,
       trigger: '.horizontal-scroll',
@@ -79,10 +97,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="works" class="px-0 overflow-hidden" ref="section">
+  <section class="px-0 overflow-hidden" ref="section">
     <div class="w-screen h-screen color-change"></div>
 
-    <div class="w-max h-screen pl-52 flex items-center gap-10 lg:gap-20 horizontal-scroll bg-text text-bg" ref="hScroll">
+    <div id="works" class="w-max h-screen pl-52 flex items-center gap-10 lg:gap-20 horizontal-scroll bg-text text-bg" ref="hScroll">
       <h2 class="title-medium shrink-0">
         Recent works
       </h2>

@@ -41,7 +41,7 @@
         </h2>
         <p class="paragraph-small mb-6">
             If you have a question about this privacy and how your data are collected, used and stored when you use
-            giusscos'apps, please feel free to email me at giusscos@icloud.com with the subject line “Data
+            giusscos'apps, please feel free to email me at hello@giusscos.com with the subject line “Data
             handling”.
         </p>
     </section>

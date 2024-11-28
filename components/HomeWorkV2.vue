@@ -10,6 +10,18 @@ const stickyStack = ref<HTMLElement[]>();
 
 const works = ref<workArray[]>([
   {
+    text: 'ByJo',
+    imageUrl: '/images/ByJo.png',
+    url: 'https://apps.apple.com/it/app/byjo-your-finance-tracker/id6738330716?l=en-GB',
+    title: 'Explore byjo project'
+  },
+  {
+    text: 'pomotask',
+    imageUrl: '/images/pomotask.png',
+    url: 'https://apps.apple.com/it/app/pomotask-progressive-timer/id6736973019?l=en-GB',
+    title: 'Explore pomotask project'
+  },
+  {
     text: 'pcasa',
     imageUrl: '/images/pcasa_thumb.webp',
     url: 'https://pcasa.it',
