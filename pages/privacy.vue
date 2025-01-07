@@ -21,9 +21,9 @@
             Storage and Sync
         </h2>
         <p class="paragraph-small mb-6">
-            <!-- All my Apps stores your data locally on the devices you use them, and syncs across devices using Apple's
-            iCloud. Specifically, the CloudKit portion of iCloud, storing data in your private iCloud database. -->
-            All my Apps stores your data locally on the devices you use them
+            All my Apps stores your data locally on the devices you use them, and syncs across devices using Apple's
+            iCloud. Specifically, the CloudKit portion of iCloud, storing data in your private iCloud database.
+            <!-- All my Apps stores your data locally on the devices you use them -->
         </p>
 
         <h2 class="title-small text-error mb-2">
